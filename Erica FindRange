@@ -1,0 +1,25 @@
+/*
+ * File: FindRange.java
+ * --------------------
+ * This program is a stub for the FindRange problem, which finds the
+ * smallest and largest values in a list of integers.
+ */
+
+import acm.program.*;
+
+public class FindRange extends ConsoleProgram {
+
+	public void run() {
+		println ("This porgram finds the largest and smallest numbers.");
+		int n;
+		while (n>0){
+			n = readInt("?");
+			n = max; 
+		}
+		int max;
+		while (n>max){
+			n = max; 
+		}
+	}
+
+}
