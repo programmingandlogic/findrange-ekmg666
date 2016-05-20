@@ -10,15 +10,18 @@ import acm.program.*;
 public class FindRange extends ConsoleProgram {
 
 	public void run() {
-		println ("This porgram finds the largest and smallest numbers.");
-		int n;
-		while (n>0){
+		println ("This program finds the largest and smallest numbers.");
+		int n = 1;
+		while (n!=0){
 			n = readInt("?");
-			n = max; 
 		}
-		int max;
-		while (n>max){
-			n = max; 
+		int max = n; 
+		while (max > n){
+			n = max;
+		}
+		if (n == 0){
+			println ("largest:"+ max +"");
+			
 		}
 	}
 
