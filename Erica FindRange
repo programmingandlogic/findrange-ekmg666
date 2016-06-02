@@ -11,19 +11,20 @@ public class FindRange extends ConsoleProgram {
 
 	public void run() {
 		println ("This program finds the largest and smallest numbers.");
-		int n = 1;
+		int n = readInt("?");
 		int max = n; 
+		int min = n;
 		while (n!=0){
 			n = readInt("?");
-			if (max > n){
-				n = max;
+			if (n > max){
+				max = n;
 			}
-			if (n == 0){
-				println ("largest:"+ max +"");
+			if (n < min){
+				min = n;
 			}
 		}
+		println ("smallest:"+ min +"");
+		println ("largest:"+ max +"");
 		
 	}
-
 }
-
